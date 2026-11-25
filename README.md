@@ -66,3 +66,8 @@ Se configuró el entorno de prototipado en `Desktop`, activando `Overflow → Ve
 Se configuraron `Modal-Confirmar` y `Modal-Cancelar` como frames independientes invocados mediante `Open overlay` (`Center`, `Close when clicking outside`, fondo `#000000` al `40 %`, animación `Move in ↑`, `Ease out`, `250 ms`), conectando la acción de confirmación hacia `05c-Procesando` / `06-Exito`:
 
 ![Configuracion de overlays en Prototipo v1](assets/paso3-overlays.png)
+
+### 3.3 Simulación de estado de error (`05b-Error`)
+Se implementó el flujo de validación de campos obligatorios mediante el frame `05b-Error`, empleando la variante `Input (State: Error)` y mensajes de ayuda visibles (WCAG 3.3.1) antes de habilitar la apertura de `Modal-Confirmar`:
+
+![Simulacion de estado de error en 05b-Error](assets/paso3-estado-error.png)
