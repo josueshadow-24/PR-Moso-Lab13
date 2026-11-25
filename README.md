@@ -96,3 +96,9 @@ Se definieron tres puntos de inicio independientes en `Prototipo v1` para evalua
 | Frame completo (`05c-Procesando`) | After delay (1200 ms) | Navigate to | `06-Exito` | Dissolve · Ease out · 300 ms |
 | Enlace `Mesa de Partes Virtual` (`06-Exito` / Header) | On click | Navigate to | `07-MisTramites` | Dissolve · Ease out · 250 ms |
 | Botón `Cancelar solicitud` (`07-MisTramites` / `05-Formulario`) | On click | Open overlay | `Modal-Cancelar` | Move in ↑ · Ease out · 250 ms |
+
+
+Se estandarizaron las curvas y tiempos de animación (`Ease out` en navegación `250–350 ms` y `Ease in and out` en componentes `100–200 ms`). Se emparejaron las capas `expediente/title`, `expediente/badge` y `expediente/progress` entre `03-Resultados` y `04-Detalle` para generar continuidad espacial mediante `Smart Animate` (`300 ms`):
+
+![Configuracion Smart Animate](assets/paso4-smart-animate.png)
+
