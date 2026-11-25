@@ -32,3 +32,10 @@ Se diseñaron y estandarizaron **12 frames** en la página `Prototipo v1` del ar
 - **Flujo F3 (Anulación):** `07-MisTramites`, `Modal-Cancelar`, `07b-Cancelado`
 
 ![Inventario de Pantallas Prototipo v1](assets/paso1-pantallas-v1.png)
+
+## Paso 2: Componentes interactivos (`Sistema`)
+
+### 2.1 Estados hover en `Button` (`Mouse enter` / `Mouse leave`)
+Se configuraron transiciones interactivas bidireccionales en las variantes `Primary`, `Secondary` y `Ghost` del component set `Button` utilizando `Mouse enter` y `Mouse leave` (evitando *While hovering* para conservar compatibilidad con eventos `On click` de navegación):
+
+![Estados interactivos en Button](assets/paso2-button-hover.png)
