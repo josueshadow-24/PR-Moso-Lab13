@@ -54,3 +54,10 @@ Se creó el component set `Checkbox` mediante Auto Layout y tokens de color/tipo
 Se verificó en un frame de prueba (`Ctrl + Alt + Enter`) que las interacciones definidas en los componentes maestros (`Button`, `Input` y `Checkbox`) se heredan automáticamente en todas las instancias sin necesidad de reconfigurarlas pantalla por pantalla:
 
 ![Validacion en Present](assets/paso2-present-prueba.png)
+
+## Paso 3: Navegación, overlays y flujos (`Prototipo v1`)
+
+### 3.1 Navegación base, dispositivo y scroll vertical
+Se configuró el entorno de prototipado en `Desktop`, activando `Overflow → Vertical` y encabezado `Position: Fixed` en pantallas extensas, junto con las transiciones `On click → Navigate to` y acciones `Back` (`Smart Animate`, `300 ms`):
+
+![Navegacion base en Prototipo v1](assets/paso3-navegacion-base.png)
