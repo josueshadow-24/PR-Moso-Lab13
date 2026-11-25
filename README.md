@@ -102,3 +102,10 @@ Se estandarizaron las curvas y tiempos de animación (`Ease out` en navegación 
 
 ![Configuracion Smart Animate](assets/paso4-smart-animate.png)
 
+### 4.2 Microinteracción de carga, retroalimentación de exito y accesibilidad de movimiento
+- **Carga (`05c-Procesando`):** Disparador `After delay (1200 ms) → Navigate to → 06-Exito` (`Dissolve`, `300 ms`), cumpliendo la Heurística 1 de Nielsen (*visibilidad del estado del sistema*).
+- **Éxito (`06-Exito`):** Animación de aparición del ícono de confirmación (`Success Badge`, escala `0.8` a `1.0` con `Smart Animate` / `Spring`, `300 ms`) y acción siguiente `Ir a mis trámites` hacia `07-MisTramites`.
+- **Accesibilidad (WCAG 2.3.1 / 2.4.7):** Sin destellos (>3 Hz), transiciones `≤ 300 ms` y foco visible conservado.
+
+![Retroalimentacion de exito en 06-Exito](assets/paso4-feedback-exito.png)
+
