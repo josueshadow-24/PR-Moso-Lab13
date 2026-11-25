@@ -39,3 +39,8 @@ Se diseñaron y estandarizaron **12 frames** en la página `Prototipo v1` del ar
 Se configuraron transiciones interactivas bidireccionales en las variantes `Primary`, `Secondary` y `Ghost` del component set `Button` utilizando `Mouse enter` y `Mouse leave` (evitando *While hovering* para conservar compatibilidad con eventos `On click` de navegación):
 
 ![Estados interactivos en Button](assets/paso2-button-hover.png)
+
+### 2.2 Indicador de foco en `Input` (WCAG 2.4.7)
+Se configuró la transición `On click → Change to → State=Focus` en el component set `Input` para evidenciar el anillo de foco al interactuar con los campos de entrada, cumpliendo con el criterio de accesibilidad WCAG 2.4.7:
+
+![Estado focus en input](assets/paso2-input-focus.png)
