@@ -49,3 +49,8 @@ Se configuró la transición `On click → Change to → State=Focus` en el comp
 Se creó el component set `Checkbox` mediante Auto Layout y tokens de color/tipografía del sistema, conectando ambos estados de forma bidireccional con `On click → Change to` (`Smart Animate`, `Ease out`, `200 ms`) e integrándolo en `05-Formulario` para la aceptación de términos:
 
 ![Componente interactivo Checkbox](assets/paso2-checkbox.png)
+
+### 2.4 Validación en modo presentación (`Present`)
+Se verificó en un frame de prueba (`Ctrl + Alt + Enter`) que las interacciones definidas en los componentes maestros (`Button`, `Input` y `Checkbox`) se heredan automáticamente en todas las instancias sin necesidad de reconfigurarlas pantalla por pantalla:
+
+![Validacion en Present](assets/paso2-present-prueba.png)
