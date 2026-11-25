@@ -118,3 +118,8 @@ Se ejecutaron los tres flujos (`F1`, `F2`, `F3`) en modo `Present` inspeccionand
 
 ![Auditoria de hotspots y revision movil](assets/paso5-prueba-movil.jpeg)
 
+### 5.2 Enlace limpio sin sesgos y versión base (`v1-prueba`)
+Se configuró el enlace de presentación con permisos `Anyone with the link – can view`, desactivando *Show hotspot hints on click* y comentarios visibles para garantizar pruebas sin sesgos. Asimismo, se registró la línea base **`v1-prueba`** en el historial de versiones de Figma:
+
+![Version v1-prueba y enlace sin sesgos](assets/paso5-version-v1-prueba.png)
+
