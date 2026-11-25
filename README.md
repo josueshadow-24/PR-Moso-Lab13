@@ -44,3 +44,8 @@ Se configuraron transiciones interactivas bidireccionales en las variantes `Prim
 Se configuró la transición `On click → Change to → State=Focus` en el component set `Input` para evidenciar el anillo de foco al interactuar con los campos de entrada, cumpliendo con el criterio de accesibilidad WCAG 2.4.7:
 
 ![Estado focus en input](assets/paso2-input-focus.png)
+
+### 2.3 Componente interactivo `Checkbox` (`State=Off` / `State=On`)
+Se creó el component set `Checkbox` mediante Auto Layout y tokens de color/tipografía del sistema, conectando ambos estados de forma bidireccional con `On click → Change to` (`Smart Animate`, `Ease out`, `200 ms`) e integrándolo en `05-Formulario` para la aceptación de términos:
+
+![Componente interactivo Checkbox](assets/paso2-checkbox.png)
