@@ -79,3 +79,20 @@ Se definieron tres puntos de inicio independientes en `Prototipo v1` para evalua
 - **F3 – Cancelar trámite (`07-MisTramites`):** Gestión y cancelación de expedientes activos mediante `Modal-Cancelar`.
 
 ![Puntos de inicio de flujo en Prototipo v1](assets/paso3-flujos.png)
+
+### 3.5 Matriz de interacciones principales (`Prototipo v1`)
+
+| Elemento (frame) | Trigger | Acción | Destino | Animación |
+| :--- | :--- | :--- | :--- | :--- |
+| Botón `Buscar Expediente` (`01-Home`) | On click | Navigate to | `02-Busqueda` | Smart Animate · Ease out · 300 ms |
+| Botón `Ver Requisitos` (`01-Home`) | On click | Navigate to | `03-Resultados` | Smart Animate · Ease out · 300 ms |
+| Botón `Consultar ahora` (`02-Busqueda`) | On click | Navigate to | `03-Resultados` | Smart Animate · Ease out · 300 ms |
+| Card `Licencia de Funcionamiento` (`03-Resultados`) | On click | Navigate to | `04-Detalle` | Smart Animate · Ease out · 300 ms |
+| Enlace `← Catálogo de Trámites` (`04-Detalle`) | On click | Back | Frame anterior | Smart Animate · Ease out · 300 ms |
+| Botón `Iniciar trámite` (`04-Detalle`) | On click | Navigate to | `05-Formulario` | Smart Animate · Ease out · 300 ms |
+| Botón `Enviar Solicitud` vacío (`05-Formulario`) | On click | Navigate to | `05b-Error` | Smart Animate · Ease out · 200 ms |
+| Botón `Enviar Solicitud` corregido (`05b-Error`) | On click | Open overlay | `Modal-Confirmar` | Move in ↑ · Ease out · 250 ms |
+| Botón `Confirmar envío` (`Modal-Confirmar`) | On click | Navigate to | `05c-Procesando` | Dissolve · Ease out · 200 ms |
+| Frame completo (`05c-Procesando`) | After delay (1200 ms) | Navigate to | `06-Exito` | Dissolve · Ease out · 300 ms |
+| Enlace `Mesa de Partes Virtual` (`06-Exito` / Header) | On click | Navigate to | `07-MisTramites` | Dissolve · Ease out · 250 ms |
+| Botón `Cancelar solicitud` (`07-MisTramites` / `05-Formulario`) | On click | Open overlay | `Modal-Cancelar` | Move in ↑ · Ease out · 250 ms |
