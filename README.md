@@ -109,3 +109,12 @@ Se estandarizaron las curvas y tiempos de animación (`Ease out` en navegación 
 
 ![Retroalimentacion de exito en 06-Exito](assets/paso4-feedback-exito.png)
 
+## Paso 5: Revisión del prototipo y prueba piloto
+
+### 5.1 Auditoría de Hotspots, Dead Ends y dispositivo móvil
+Se ejecutaron los tres flujos (`F1`, `F2`, `F3`) en modo `Present` inspeccionando *hotspots* para eliminar pantallas sin salida (*dead ends*) y se validó en dispositivo móvil real la altura mínima táctil de `44 px`, legibilidad tipográfica y funcionamiento del `Header` fijo:
+
+![Auditoria de hotspots y revision movil](assets/paso5-hotspots-desktop.png)
+
+![Auditoria de hotspots y revision movil](assets/paso5-prueba-movil.jpeg)
+
