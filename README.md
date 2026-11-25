@@ -61,3 +61,8 @@ Se verificó en un frame de prueba (`Ctrl + Alt + Enter`) que las interacciones 
 Se configuró el entorno de prototipado en `Desktop`, activando `Overflow → Vertical` y encabezado `Position: Fixed` en pantallas extensas, junto con las transiciones `On click → Navigate to` y acciones `Back` (`Smart Animate`, `300 ms`):
 
 ![Navegacion base en Prototipo v1](assets/paso3-navegacion-base.png)
+
+### 3.2 Superposiciones y modales (`Open overlay`)
+Se configuraron `Modal-Confirmar` y `Modal-Cancelar` como frames independientes invocados mediante `Open overlay` (`Center`, `Close when clicking outside`, fondo `#000000` al `40 %`, animación `Move in ↑`, `Ease out`, `250 ms`), conectando la acción de confirmación hacia `05c-Procesando` / `06-Exito`:
+
+![Configuracion de overlays en Prototipo v1](assets/paso3-overlays.png)
