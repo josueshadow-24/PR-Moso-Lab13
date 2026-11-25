@@ -22,3 +22,13 @@
 
 ### Diagrama de flujo de usuario
 ![Diagrama de Flujo de Usuario](assets/paso1-user-flow.png)
+
+### Inventario de pantallas y modales (`Prototipo v1`)
+
+Se diseñaron y estandarizaron **12 frames** en la página `Prototipo v1` del archivo `PR-Moso-Lab13` utilizando instancias vinculadas al sistema de diseño (`Button`, `Input`, `Card`), prefijos numéricos sin espacios y nomenclatura homologada en capas compartidas para soportar transiciones con **Smart Animate**:
+
+- **Flujo F1 (Consulta):** `01-Home`, `02-Busqueda`, `03-Resultados`, `04-Detalle`
+- **Flujo F2 (Licencia):** `05-Formulario`, `05b-Error`, `Modal-Confirmar`, `05c-Procesando`, `06-Exito`
+- **Flujo F3 (Anulación):** `07-MisTramites`, `Modal-Cancelar`, `07b-Cancelado`
+
+![Inventario de Pantallas Prototipo v1](assets/paso1-pantallas-v1.png)
