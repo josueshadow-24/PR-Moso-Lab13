@@ -71,3 +71,11 @@ Se configuraron `Modal-Confirmar` y `Modal-Cancelar` como frames independientes 
 Se implementó el flujo de validación de campos obligatorios mediante el frame `05b-Error`, empleando la variante `Input (State: Error)` y mensajes de ayuda visibles (WCAG 3.3.1) antes de habilitar la apertura de `Modal-Confirmar`:
 
 ![Simulacion de estado de error en 05b-Error](assets/paso3-estado-error.png)
+
+### 3.4 Puntos de inicio de flujo (`Flow Starting Points`)
+Se definieron tres puntos de inicio independientes en `Prototipo v1` para evaluar cada recorrido de usuario por separado:
+- **F1 – Buscar trámite (`01-Home`):** Búsqueda, filtrado y consulta de requisitos de trámites municipales.
+- **F2 – Solicitar trámite (`04-Detalle`):** Llenado de solicitud, validación de error (`05b-Error`), confirmación modal (`Modal-Confirmar`) y constancia (`06-Exito`).
+- **F3 – Cancelar trámite (`07-MisTramites`):** Gestión y cancelación de expedientes activos mediante `Modal-Cancelar`.
+
+![Puntos de inicio de flujo en Prototipo v1](assets/paso3-flujos.png)
