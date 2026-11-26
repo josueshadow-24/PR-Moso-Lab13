@@ -6,9 +6,13 @@
 
 **Producto:** Portal de atención ciudadana y trámites en línea – Municipalidad Distrital de El Porvenir
 
-**Archivo Principal PR-Moso-Lab13:** [...](...)
+**Archivo Principal PR-Moso-Lab13:** [https://www.figma.com/design/Sa92kHVJqOYkaieKY49U43/PR-Moso-Lab13?node-id=1-3&t=XAf7x70uGcsNjLk2-1](https://www.figma.com/design/Sa92kHVJqOYkaieKY49U43/PR-Moso-Lab13?node-id=1-3&t=XAf7x70uGcsNjLk2-1)
 
-**Archivo Testing PR-Moso-Lab13-Testing:** [...](...)
+**Link del prototipo:** [https://www.figma.com/proto/Sa92kHVJqOYkaieKY49U43/PR-Moso-Lab13?node-id=5-454&p=f&t=ogPw2U20bu1NcgN2-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5%3A454&show-proto-sidebar=1](https://www.figma.com/proto/Sa92kHVJqOYkaieKY49U43/PR-Moso-Lab13?node-id=5-454&p=f&t=ogPw2U20bu1NcgN2-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5%3A454&show-proto-sidebar=1)
+
+**Archivo Testing PR-Moso-Lab13-Testing:** [https://www.figma.com/design/X5DObF3V70ZK4RumYHwT8f/PR-Moso-Lab13-Testing?node-id=2-2&t=LieupYkHYqpsUxV7-1](https://www.figma.com/design/X5DObF3V70ZK4RumYHwT8f/PR-Moso-Lab13-Testing?node-id=2-2&t=LieupYkHYqpsUxV7-1)
+
+**Link del excel para el paso 7:** [https://docs.google.com/spreadsheets/d/1R57SMstZ8PLV3IQNLTbzPUBY9XUVHrC6/edit?usp=sharing&ouid=118180564071028740655&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1R57SMstZ8PLV3IQNLTbzPUBY9XUVHrC6/edit?usp=sharing&ouid=118180564071028740655&rtpof=true&sd=true)
 
 ---
 
@@ -198,3 +202,32 @@ Se estructuró el plan de evaluación en la página `Testing` de Figma bajo prot
 | **`v2-iteracion` (Iterado)** | $n = 2$ (`P6–P7`) | **T2** (Solicitud y corrección de error) | **100 %** (2.0 / 2) | **74.5 s** *(-31 %)* | **0.0** *(-100 %)* |
 
 ![Validacion comparativa de Prototipo v2](assets/paso8-validacion-v2.png)
+
+
+---
+
+## Paso 9: Preparación del Handoff y Verificación Final
+
+### 9.1 Developer Handoff (`Ready for dev`, Tokens y Anotaciones)
+- **Frames marcados como `Ready for dev`:** `01-Home`, `02-TramiteDetalle`, `03-Resultados`, `04-Detalle`, `05-Formulario`, `05b-Error`, `05c-Procesando`, `06-Exito`, `07-MisTramites` y `Modal-Cancelar` en `Prototipo v2`.
+- **Especificaciones documentadas:** Tokens de color (`#1E3A5F`, `#DC2626`, `#FEF2F2`), estilos tipográficos (`Inter`), íconos configurados para exportación (`SVG` / `PNG 2x`), estados de interacción (`Hover`, `Focus WCAG 2.4.7`, `Error WCAG 3.3.1`, `Disabled`) y manejo de casos borde (*Empty State* y *Timeout* $> 5000\text{ ms}$).
+
+![Handoff y Dev Mode en Figma](assets/paso9-handoff-devmode.png)
+
+### 9.2 Resumen Ejecutivo de Una Página
+
+![Resumen Ejecutivo Final](assets/paso9-resumen-ejecutivo.png)
+
+### 9.3 Lista de Verificación Final del Laboratorio N° 13
+
+| Criterio | Cumple (Sí / No) | Evidencia (captura) |
+| :--- | :---: | :--- |
+| Los tres flujos tienen *starting point*, se completan de inicio a fin y no tienen pantallas sin salida. | **Sí** | ![assets/paso3-flujos.png](assets/paso3-flujos.png)· ![assets/paso5-hotspots-movil.png](assets/paso5-hotspots-desktop.png) |
+| `Button`, `Input` y `Checkbox` funcionan como componentes interactivos (*Change to*) en todas sus instancias. | **Sí** | ![assets/paso2-componentes-interactivos.png](assets/paso2-present-prueba.png)· ![assets/paso8-antes-despues-v2.png](assets/paso8-antes-despues-v2.png) |
+| El prototipo usa al menos un *overlay*, un estado de error, un *After delay* y una transición *Smart Animate*. | **Sí** | ![assets/paso4-smart-animate.png](assets/paso4-smart-animate.png)· ![assets/paso4-feedback-exito.png](assets/paso4-feedback-exito.png)|
+| Las transiciones siguen la guía de duración y *easing*, y ninguna animación destella más de 3 veces por segundo. | **Sí** | ![assets/paso4-feedback-exito.png](assets/paso4-feedback-exito.png)|
+| El prototipo fue revisado en un dispositivo real y en una prueba piloto. | **Sí** | ![assets/paso5-prueba-movil-real.png](assets/paso5-prueba-movil.jpeg)· ![assets/paso5-version-v1-prueba.png](assets/paso5-version-v1-prueba.png)|
+| La prueba se realizó con al menos 5 participantes con consentimiento informado y datos anonimizados. | **Sí** | ![assets/paso6-plan-testing-2.png](assets/paso6-plan-testing-1.png) ![assets/paso6-plan-testing-2.png](assets/paso6-plan-testing-2.png) |
+| Se registraron tasa de éxito, tiempo en tarea, errores y puntaje SUS de todos los participantes. | **Sí** | ![assets/paso7-metricas-sus-1.png](assets/paso7-metricas-sus-1.png)![assets/paso7-metricas-sus-2.png](assets/paso7-metricas-sus-2.png)![assets/paso7-metricas-sus-3.png](assets/paso7-metricas-sus-3.png) ![assets/paso7-resumen-sus.png](assets/paso7-resumen-sus.png) |
+| Los hallazgos están clasificados por severidad y todos los de severidad 3 y 4 fueron corregidos en la `v2`. | **Sí** | ![assets/paso8-affinity-matriz.png](assets/paso8-affinity-matriz-1.png) ![assets/paso8-affinity-matriz.png](assets/paso8-affinity-matriz-2.png)![aassets/paso8-version-v2-iteracion.png](assets/paso8-version-v2-iteracion.png)|
+| Los frames finales están marcados como *Ready for dev* y anotados con estados y comportamientos. | **Sí** | `` · `` ![assets/paso9-handoff-devmode.png](assets/paso9-handoff-devmode.png) ![assets/paso9-resumen-ejecutivo.png](assets/paso9-resumen-ejecutivo-1.png) ![assets/paso9-resumen-ejecutivo.png](assets/paso9-resumen-ejecutivo-2.png)|
