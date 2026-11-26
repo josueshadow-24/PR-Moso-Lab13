@@ -123,3 +123,5 @@ Se configuró el enlace de presentación con permisos `Anyone with the link – 
 
 ![Version v1-prueba y enlace sin sesgos](assets/paso5-version-v1-prueba.png)
 
+### 5.3 Prueba piloto y calibración de escenarios
+Se ejecutó una sesión piloto de **22 minutos** (objetivo: 20–25 min) con un compañero utilizando `v1-prueba`. Los datos cuantitativos del piloto fueron excluidos de los resultados finales y permitieron refinar la redacción de los escenarios de búsqueda (`F1`) y validación de error (`F2`) antes de iniciar las sesiones formales del Paso 6.
