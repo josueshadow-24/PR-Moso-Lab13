@@ -160,3 +160,41 @@ Se estructuró el plan de evaluación en la página `Testing` de Figma bajo prot
 
 ![Registro de metricas y calculo SUS](assets/paso7-metricas-sus-3.png)
 
+---
+## Paso 8: Análisis de hallazgos, priorización e iteración (`v2-iteracion`)
+
+### 8.1 Affinity Mapping y Matriz Impacto / Esfuerzo ($2 \times 2$)
+- **Fallo sistémico identificado ($\ge 3 / 5$ participantes):** Dificultad para localizar el campo obligatorio vacío (**Nombre Comercial del Establecimiento**) en `05b-Error` y ambigüedad previa sobre el formato esperado antes de enviar el formulario (`P1`, `P3`, `P5`).
+- **Quick Wins priorizados (Alto Impacto / Bajo Esfuerzo):**
+  1. Propagación de fondo tintado `#FEF2F2` y borde `2 px #DC2626` en el componente maestro `Input / Error` (`WCAG 3.3.1`).
+  2. Incorporación de *helper text* preventivo en `05-Formulario` y enlace directo al campo con error en `05b-Error`.
+  3. Diferenciación semántica en el componente maestro `Header` (`Catálogo de Trámites` vs. `Consultar Expediente`) y jerarquía de botón primario en `06-Exito` (`Ir a mis trámites`).
+
+![Affinity Mapping y Matriz Impacto Esfuerzo](assets/paso8-affinity-matriz-1.png)
+
+![Affinity Mapping y Matriz Impacto Esfuerzo](assets/paso8-affinity-matriz-2.png)
+
+### 8.2 Tabla consolidada de hallazgos y severidad de Nielsen
+
+| N° | Problema observado | Tarea | Usuarios ($x / 5$) | Heurística relacionada | Severidad (0–4) | Mejora propuesta |
+| :-: | :--- | :-: | :-: | :--- | :-: | :--- |
+| **1** | No identifican de inmediato que el campo obligatorio **Nombre Comercial del Establecimiento** tiene error en `05b-Error`; el fondo sigue siendo blanco. | **T2** | **3 / 5** *(Fallo sistémico)* | **H9:** Ayudar a reconocer, diagnosticar y recuperarse de errores (`WCAG 3.3.1`) | **3** *(Mayor – Alta)* | Aplicar fondo tintado `#FEF2F2`, borde `2 px #DC2626` y mensaje explicativo bajo el campo Nombre Comercial en `Input / Error`. |
+| **2** | Falta de guía preventiva en `05-Formulario` sobre el formato requerido en Nombre Comercial antes de enviar la solicitud. | **T2** | **3 / 5** *(Fallo sistémico)* | **H5:** Prevención de errores | **3** *(Mayor – Alta)* | Incorporar *helper text* permanente (`"Obligatorio: escribe el nombre público de tu negocio (ej. Bodega El Triunfo)."`). |
+| **3** | Confusión inicial en la barra superior entre `"Trámites"` y `"Consulta Expediente"` al iniciar búsqueda. | **T1** | **2 / 5** | **H2:** Relación con el mundo real / **H4:** Consistencia | **2** *(Menor – Media)* | Renombrar en el componente `Header` a `"Catálogo de Trámites"` y `"Consultar Expediente"` con ícono de lupa. |
+| **4** | En `06-Exito`, `"Descargar Cargo Digital"` compite visualmente con `"Ir a mis trámites"`, retrasando la gestión posterior. | **T3** | **1 / 5** | **H8:** Diseño estético y minimalista (jerarquía visual) | **2** *(Menor – Media)* | Convertir `"Ir a mis trámites"` en botón primario relleno (`#1E3A5F`) y `"Descargar Cargo Digital"` en secundario con contorno. |
+| **5** | En `03-Resultados`, al mostrarse dos expedientes similares sin badge de categoría destacado, el usuario duda brevemente cuál abrir. | **T1** | **1 / 5** | **H6:** Reconocer antes que recordar | **1** *(Cosmético – Baja)* | Añadir badge de categoría (`Licencia Comercial` / `Catastro`) en la esquina superior de cada tarjeta. |
+
+### 8.3 Implementación en `Prototipo v2` y Línea Base `v2-iteracion`
+
+![Comparativa Antes y Despues en Prototipo v2](assets/paso8-antes-despues-v2.png)
+
+![Historial de versiones v2-iteracion en Figma](assets/paso8-version-v2-iteracion.png)
+
+### 8.4 Validación Comparativa de `v2-iteracion` ($n = 2$ Nuevos Participantes)
+
+| Versión evaluada | Participantes ($n$) | Tarea evaluada | Tasa de éxito (%) | Tiempo promedio (s) | Errores promedio |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **`v1-prueba` (Línea base)** | $n = 5$ (`P1–P5`) | **T2** (Solicitud y corrección de error) | **70 %** (3.5 / 5) | **108.0 s** | **1.4** |
+| **`v2-iteracion` (Iterado)** | $n = 2$ (`P6–P7`) | **T2** (Solicitud y corrección de error) | **100 %** (2.0 / 2) | **74.5 s** *(-31 %)* | **0.0** *(-100 %)* |
+
+![Validacion comparativa de Prototipo v2](assets/paso8-validacion-v2.png)
