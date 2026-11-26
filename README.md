@@ -125,3 +125,11 @@ Se configuró el enlace de presentación con permisos `Anyone with the link – 
 
 ### 5.3 Prueba piloto y calibración de escenarios
 Se ejecutó una sesión piloto de **22 minutos** (objetivo: 20–25 min) con un compañero utilizando `v1-prueba`. Los datos cuantitativos del piloto fueron excluidos de los resultados finales y permitieron refinar la redacción de los escenarios de búsqueda (`F1`) y validación de error (`F2`) antes de iniciar las sesiones formales del Paso 6.
+
+## Paso 6: Plan de la prueba de usabilidad (`Testing`)
+
+Se estructuró el plan de evaluación en la página `Testing` de Figma bajo protocolo moderado con *Think Aloud* para 5 participantes anonimizados (`P1`–`P5`, Ley N.° 29733), definiendo roles (Moderador, Observador–anotador, Cronometrista), escenarios sin términos de interfaz (`T1 ≤ 90s`, `T2 ≤ 120s`, `T3 ≤ 60s`), consentimiento informado y guion de 5 fases con cuestionario SUS:
+
+![Plan de prueba de usabilidad en pagina Testing](assets/paso6-plan-testing-1.png)
+
+![Plan de prueba de usabilidad en pagina Testing](assets/paso6-plan-testing-2.png)
