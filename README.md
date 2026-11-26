@@ -33,6 +33,8 @@ Se diseñaron y estandarizaron **12 frames** en la página `Prototipo v1` del ar
 
 ![Inventario de Pantallas Prototipo v1](assets/paso1-pantallas-v1.png)
 
+---
+
 ## Paso 2: Componentes interactivos (`Sistema`)
 
 ### 2.1 Estados hover en `Button` (`Mouse enter` / `Mouse leave`)
@@ -54,6 +56,8 @@ Se creó el component set `Checkbox` mediante Auto Layout y tokens de color/tipo
 Se verificó en un frame de prueba (`Ctrl + Alt + Enter`) que las interacciones definidas en los componentes maestros (`Button`, `Input` y `Checkbox`) se heredan automáticamente en todas las instancias sin necesidad de reconfigurarlas pantalla por pantalla:
 
 ![Validacion en Present](assets/paso2-present-prueba.png)
+
+---
 
 ## Paso 3: Navegación, overlays y flujos (`Prototipo v1`)
 
@@ -97,6 +101,7 @@ Se definieron tres puntos de inicio independientes en `Prototipo v1` para evalua
 | Enlace `Mesa de Partes Virtual` (`06-Exito` / Header) | On click | Navigate to | `07-MisTramites` | Dissolve · Ease out · 250 ms |
 | Botón `Cancelar solicitud` (`07-MisTramites` / `05-Formulario`) | On click | Open overlay | `Modal-Cancelar` | Move in ↑ · Ease out · 250 ms |
 
+---
 
 Se estandarizaron las curvas y tiempos de animación (`Ease out` en navegación `250–350 ms` y `Ease in and out` en componentes `100–200 ms`). Se emparejaron las capas `expediente/title`, `expediente/badge` y `expediente/progress` entre `03-Resultados` y `04-Detalle` para generar continuidad espacial mediante `Smart Animate` (`300 ms`):
 
@@ -108,6 +113,8 @@ Se estandarizaron las curvas y tiempos de animación (`Ease out` en navegación 
 - **Accesibilidad (WCAG 2.3.1 / 2.4.7):** Sin destellos (>3 Hz), transiciones `≤ 300 ms` y foco visible conservado.
 
 ![Retroalimentacion de exito en 06-Exito](assets/paso4-feedback-exito.png)
+
+---
 
 ## Paso 5: Revisión del prototipo y prueba piloto
 
@@ -126,6 +133,7 @@ Se configuró el enlace de presentación con permisos `Anyone with the link – 
 ### 5.3 Prueba piloto y calibración de escenarios
 Se ejecutó una sesión piloto de **22 minutos** (objetivo: 20–25 min) con un compañero utilizando `v1-prueba`. Los datos cuantitativos del piloto fueron excluidos de los resultados finales y permitieron refinar la redacción de los escenarios de búsqueda (`F1`) y validación de error (`F2`) antes de iniciar las sesiones formales del Paso 6.
 
+---
 ## Paso 6: Plan de la prueba de usabilidad (`Testing`)
 
 Se estructuró el plan de evaluación en la página `Testing` de Figma bajo protocolo moderado con *Think Aloud* para 5 participantes anonimizados (`P1`–`P5`, Ley N.° 29733), definiendo roles (Moderador, Observador–anotador, Cronometrista), escenarios sin términos de interfaz (`T1 ≤ 90s`, `T2 ≤ 120s`, `T3 ≤ 60s`), consentimiento informado y guion de 5 fases con cuestionario SUS:
@@ -133,3 +141,22 @@ Se estructuró el plan de evaluación en la página `Testing` de Figma bajo prot
 ![Plan de prueba de usabilidad en pagina Testing](assets/paso6-plan-testing-1.png)
 
 ![Plan de prueba de usabilidad en pagina Testing](assets/paso6-plan-testing-2.png)
+
+---
+
+## Paso 7: Ejecución de la Prueba y Registro de Métricas
+
+### 7.1 Resumen de Desempeño por Tarea (`n = 5`)
+
+| Tarea | Tasa de éxito (%) | Tiempo promedio (s) | Errores promedio | Observaciones clave |
+| :--- | :---: | :---: | :---: | :--- |
+| **T1** | **90 %** (4.5 / 5) | **58.0 s** | **0.4** | Ruta fluida desde `01-Home`; 1 de 5 confundió inicialmente la pestaña *Trámites* con *Consulta Expediente*. |
+| **T2** | **70 %** (3.5 / 5) | **108.0 s** | **1.4** | 3 de 5 no identificaron de inmediato el campo obligatorio omitido al saltar `05b-Error`. |
+| **T3** | **90 %** (4.5 / 5) | **45.0 s** | **0.2** | Flujo claro mediante `Modal-Cancelar`; 1 de 5 tardó en ubicar el acceso a `07-MisTramites`. |
+
+### 7.2 Evaluación de Satisfacción SUS (*System Usability Scale*)
+- **Puntajes individuales:** `P1 = 77.5`, `P2 = 92.5`, `P3 = 67.5`, `P4 = 100.0`, `P5 = 77.5`.
+- **Puntaje SUS Promedio:** **83.0 / 100** (superior al benchmark de 68 y al umbral de excelencia de 80).
+
+![Registro de metricas y calculo SUS](assets/paso7-metricas-sus-3.png)
+
